@@ -5,6 +5,7 @@ angular.module('myFirstApp', [])
 
 function ExhibitController($scope){
   $scope.ExhibitName = 'WDI-HK9';
+  $scope.image = 'http://dailygenius.com/wp-content/uploads/2015/04/coding_my_life_away_by_izzuthug-d4dgn1d.png';
   $scope.Author = 'Ian Kwok';
 }
 
