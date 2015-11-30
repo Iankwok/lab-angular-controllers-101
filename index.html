@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+
+<body>
+  <section ng-controller="ExhibitController">
+   <h1>Exhibit Name</h1>
+   <img src="http://dailygenius.com/wp-content/uploads/2015/04/coding_my_life_away_by_izzuthug-d4dgn1d.png" alt="">
+   <p>{{ ExhibitName }}</p>
+   <p>By {{ Author }}</p>
+  </section>
+
+  <section ng-controller="GeneralInfoController">
+  <h1>General Info:</h1>
+  <p>Opening Hours</p>
+  <ul>
+    <li>{{ hours.Friday }}</li>
+    <li>{{ hours.Monday }}</li>
+    <li>{{ hours.Saturday }}</li>
+    <li>{{ hours.Friday }}</li>
+    <li>{{ hours.Friday }}</li>
+    <li>{{ hours.Friday }}</li>
+  </ul>
+  </section>
+
+  <section ng-controller="DonorController">
+  <h1>Contact:</h1>
+  <p>{{ contactLink }}</p>
+  <ul>
+    <li>{{ amount[0] }}</li>
+    <li>{{ amount[1] }}</li>
+    <li>{{ amount[2] }}</li>
+    <li>{{ amount[3] }}</li>
+  </ul>
+  </section>
+
+
+  </body>
+ </html>
